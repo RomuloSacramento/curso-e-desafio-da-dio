@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(239, 9, 239, 0.27);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li span {
+  margin-left: 10px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+}
+
+h1, p {
+  text-align: center;
+  margin: 5px;
+}
+
+div {
+  text-align: center;
+  margin: 100px;
+}
+
+li {
+  text-align: center;
+  margin: 20;
+  left: 50%;
+  right: 50%;
+}

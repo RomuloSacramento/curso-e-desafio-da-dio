@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js"></script>
+  <title>To-do List</title>
+  <h1>To-do List</h1>
+
+</head>
+<body>
+  <div>
+    <p>Lista de Tarefas</p>
+    <form>
+      <label id="nova-tarefa" for="tarefa">Nova tarefa:</label>
+      <input type="text" id="tarefa" placeholder="Digite sua tarefa...">
+      <button type="button" id="adicionar">Adicionar</button>
+    </form>
+    <ul id="lista">
+      <script>
+        
+          const form = document.querySelector("form");
+          const input = document.querySelector("#tarefa");
+          const lista = document.querySelector("#lista");
+          const botao = document.querySelector("#adicionar");
+          
+          botao.addEventListener("click", function () {
+            
+            if (input.value.trim() !== "") {
+              
+              const item = document.createElement("li");
+              const checkbox = document.createElement("input");
+              checkbox.type = "checkbox";
+              const texto = document.createElement("span");
+              texto.innerText = input.value;
+              
+              item.appendChild(checkbox);
+              item.appendChild(texto);
+              
+              lista.appendChild(item);
+              
+              input.value = "";
+            }
+          });
+          lista.addEventListener("click", function (event) {
+            const checkbox = event.target;
+            const item = checkbox.parentElement;
+            if (checkbox.checked) {
+              item.classList.add("completed");
+            } else {
+              item.classList.remove("completed");
+            }
+          });
+      </script>
+    </ul>
+  </div>
+</body>
+</html>
