@@ -6,4 +6,4 @@ Repositorio
 ----------------------|
 Discrição:
 
-1 - Introdução ao javaScrip
+1 - Introdução ao javaScript
