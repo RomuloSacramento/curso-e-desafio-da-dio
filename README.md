@@ -1,1 +1,9 @@
-# curso-e-desafio-da-dio
+#curso-e-desafio-da-dio
+
+Olá, sejam bem vindos!
+----------------------|
+Repositorio 
+----------------------|
+Discrição:
+
+1 - Introdução ao javaScrip
